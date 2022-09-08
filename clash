@@ -19,26 +19,26 @@ dns:
     - 223.5.5.5
 
 proxies:
-  - name: "Hys-fly.xdeandtom.xyz"
+  - name: "Hys-chookyin.me"
     type: hysteria
-    server: fly.xdeandtom.xyz
-    port: 38419
-    auth_str: xdeandtom
+    server: chookyin.me
+    port: 18249
+    auth_str: chookyin
     alpn: h3
     protocol: udp
-    up: 625
-    down: 625
-    sni: fly.xdeandtom.xyz
+    up: 1248
+    down: 1248
+    sni: chookyin.me
     skip-cert-verify: false
-    recv_window_conn: 65536000
-    recv_window: 262144000
+    recv_window_conn: 130809856
+    recv_window: 523239424
     disable_mtu_discovery: true
 
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-     - Hys-fly.xdeandtom.xyz
+     - Hys-chookyin.me
 
 rule-providers:
   reject:
